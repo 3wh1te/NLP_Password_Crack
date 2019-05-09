@@ -1,0 +1,10 @@
+{"sorted_segs": "['45851256']", "words": "[]", "gaps": "['45851256']"}
+{"sorted_segs": "['b', 'i', 'an', 'yuan', 'yu', '1983']", "words": "['b', 'i', 'an', 'yuan']", "gaps": "['yu', '1983']"}
+{"sorted_segs": "['83066242']", "words": "[]", "gaps": "['83066242']"}
+{"sorted_segs": "['a', '6965581']", "words": "['a']", "gaps": "['6965581']"}
+{"sorted_segs": "['5418152']", "words": "[]", "gaps": "['5418152']"}
+{"sorted_segs": "['shi', 'ma', '22188']", "words": "['shi', 'ma']", "gaps": "['22188']"}
+{"sorted_segs": "['123123']", "words": "[]", "gaps": "['123123']"}
+{"sorted_segs": "['c', 'hen', '1224']", "words": "['c', 'hen']", "gaps": "['1224']"}
+{"sorted_segs": "['c', 'x', 'b', '1990131']", "words": "['c', 'x', 'b']", "gaps": "['1990131']"}
+{"sorted_segs": "['1', 'q', '2', 'w', '3', 'e', '4r']", "words": "['q', 'w', 'e']", "gaps": "['1', '2', '3', '4r']"}

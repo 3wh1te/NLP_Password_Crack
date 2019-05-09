@@ -1,0 +1,70 @@
+""" 
+---------------------- Corpus --------------------------
+
+A simple English dictionary for Python
+
+--------------------------------------------------------
+
+#### How to use ####
+    
+import Corpus in your document
+
+		import Corpus
+
+--------------------------------------------------------
+
+Use function en_vocab(string) to check whether the word is valid English word or not.
+
+		spell = Corpus.en_vocab
+		spell('word')
+
+Function en_vocab will return boolean value True or False.
+
+' True ' if the word is correct and ' False ' if not.
+
+--------------------------------------------------------
+
+#### Example ####
+_________________________________________________________
+
+		import Corpus
+		spell = Corpus.en_vocab
+		correct=[]
+		wrong=[]
+		words=['align', 'Intergalactic', 'yo-yo', 'Speling', 'javascript', 'sentenc']
+		for i in range(len(words)):
+		if spell(words[i])==True:
+			correct.append(words[i])
+		else:
+			wrong.append(words[i])
+		print "correct words are :- ", correct
+		print "Wrong words are :- ", wrong
+		print spell(words[1])
+		print spell(words[3])
+_________________________________________________________
+
+Output is
+_________________________________________________________
+
+		correct words are :-  ['align', 'Intergalactic', 'yo-yo', 'javascript']
+		Wrong words are :-  ['Speling', 'sentenc']
+		True
+		False
+_________________________________________________________
+
+--------------------------------------------------------
+
+#### Current release ####
+
+For Python 2.7
+
+*** Corpus version 0.4.2 ***
+
+##### In future #####
+
+Support for definition of words, suggestions for wrong words and a lot of 'Technical terms' will be added soon. 
+
+"""
+
+from .Corpus import *
+__version__ = '0.4.2'

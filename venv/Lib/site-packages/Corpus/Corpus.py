@@ -1,0 +1,40 @@
+"""Importing required modules"""
+import csv
+import os
+"""This module contains methods for Spell Check. Accepts single word(string) at a time."""
+def en_vocab(word):
+	"""main_dir and csv_dir to get path of CSV file"""
+	main_dir = os.path.dirname(__file__)
+	csv_dir = os.path.join(main_dir, 'CorpusDict.csv')
+	customDict=[]
+	"""Returns true if length of given word is 0 (in other words if input is null)."""
+	if len(word) == 0:
+		return True
+	elif (word == " "):
+		"""Returns true for single space (Error handling)."""
+		return True
+	else:
+		"""opens CSV file using 'CSV for Python' module."""
+		with open (csv_dir) as f:
+			"""Reads every row of the CSV file and appends the words to customDict list"""
+			for row in csv.reader(f):
+				customDict.append(row[0])
+		"""Checks if the input is number or not. If number, returns True, else goes to except condition."""
+		try:
+			if (int(float(word)) == int(float(word))):
+				return True
+			else:
+				return False
+		except:
+			word=word[0].lower() + word[1:]
+			if word in customDict:
+				"""If word is present in list, returns True, else goes to else part"""
+				return True
+			else:
+				"""Converts the first letter word to uppercase."""
+				word=word[0].upper() + word[1:]		
+				if word in customDict:
+					"""If word is present in list, returns True, else returns False"""
+					return True
+				else:
+					return False

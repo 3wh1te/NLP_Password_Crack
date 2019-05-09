@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: Corpus
+Version: 0.4.2
+Summary: A simple English dictionary for Python
+Home-page: https://github.com/aneeshb413/Corpus
+Author: Aneesh Bhat
+Author-email: aneeshb413@gmail.com
+License: MIT
+Description: This can be used to check spelling of processed text for furthur use.
+Keywords: dictionary spelling english linguistic
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
